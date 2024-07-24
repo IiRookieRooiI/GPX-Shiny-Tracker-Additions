@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GPX+ Shiny Tracker: Ice Types</title>
+    <link rel="stylesheet" type="text/css" href="../Style.css">
+    <link rel="icon" href="../Images/Main/Sparkles.png">
+    <script src="../Script-ClickProgress.js"></script>
+    <script>
+        window.onload = function () { markAll(); }
+    </script>
+</head>
+
+<body id="top">
+    <header>
+        <img src="../Images2/Type-Banner.png" alt="Tracker Version Banner">
+        <nav class="menu">
+            <div class="head">Navigation & Collection</div>
+            <ul id="progressBars">
+                <li><a href="#top">Generation I</a></li>
+                <!-- max and title for each progress bar are to be regarded as
+                 placeholders that are corrected by the Javascript -->
+                <progress value="0" max="11" title="0/11"></progress>
+                <li><a href="#Gen2">Generation II</a></li>
+                <progress value="0" max="5" title="0/5"></progress>
+                <li><a href="#Gen3">Generation III</a></li>
+                <progress value="0" max="8" title="0/8"></progress>
+                <li><a href="#Gen4">Generation IV</a></li>
+                <progress value="0" max="9" title="0/9"></progress>
+                <li><a href="#Gen5">Generation V</a></li>
+                <progress value="0" max="12" title="0/12"></progress>
+                <li><a href="#Gen6">Generation VI</a></li>
+                <progress value="0" max="5" title="0/5"></progress>
+                <li><a href="#Gen7">Generation VII</a></li>
+                <progress value="0" max="2" title="0/2"></progress>
+                <li><a href="#Gen8">Generation VIII</a></li>
+                <progress value="0" max="9" title="0/9"></progress>
+                <li><a href="#Gen9">Generation IX</a></li>
+                <progress value="0" max="7" title="0/7"></progress>
+                <li><a href="#Novelty">Novelty Pokémon</a></li>
+                <progress value="0" max="35" title="0/35"></progress>
+            </ul>
+        </nav>
+    </header>
+    <main id="mark"><!-- this <main> must contain no images other than Pokémon to be marked by JS! -->
+        <div class="head">Information on the Ice Edition</div>
+        <div class="body">
+            <ul class="list">
+                <li>This version contains every Ice-type Pokédex entry on Global PokédeX Plus.</li>
+                <li>To mark a Pokémon as "owned" you can use the JavaScript feature by left-clicking on it's icon.</li>
+                <li>Hover over icons to see their Pokédex number, species name, current form and typing.</li>
+                <li>National Pokédex order takes priority in the sorting of entries, including Novelty Pokémon.</li>
+                <li>Pokémon that haven't been released use placeholder data, which will be updated in the future.</li>
+            </ul>
+            <p>Stuck and need some help? You can always contact <a href="https://gpx.plus/user/Rookie+Roo" target="_blank">Rookie Roo</a> for clarifications or updates!</p>
+        </div>        <div class="head">Global PokédeX Plus: Shiny Living Dex [Ice Edition]</div>
+        <div class="body">
+            <div class="subtitle">Box 1</div>
+            <!-- This is the start of Generation I. -->
+            <div class="pkmn Gen1" id="Gen1">
+                <img class="notown" src="../Images/Pokémon/27-Alolan.png" alt="Sandshrew [Alolan]">
+                <span class="info">
+                    <p>#027 | Sandshrew</p>
+                    <p class="form">Alolan</p>
+                    <div class="ice"></div>
+                    <div class="steel"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/28-Alolan.png" alt="Sandslash [Alolan]">
+                <span class="info">
+                    <p>#028 | Sandslash</p>
+                    <p class="form">Alolan</p>
+                    <div class="ice"></div>
+                    <div class="steel"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/37-Alolan.png" alt="Vulpix [Alolan]">
+                <span class="info">
+                    <p>#037 | Vulpix</p>
+                    <p class="form">Alolan</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/38-Alolan.png" alt="Ninetales [Alolan]">
+                <span class="info">
+                    <p>#038 | Ninetales</p>
+                    <p class="form">Alolan</p>
+                    <div class="ice"></div>
+                    <div class="fairy"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/87.png" alt="Dewgong">
+                <span class="info">
+                    <p>#087 | Dewgong</p>
+                    <div class="water"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/91.png" alt="Cloyster">
+                <span class="info">
+                    <p>#091 | Cloyster</p>
+                    <div class="water"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/122-Galarian.png" alt="Mr. Mime [Galarian]">
+                <span class="info">
+                    <p>#122 | Mr. Mime</p>
+                    <p class="form">Galarian</p>
+                    <div class="ice"></div>
+                    <div class="psychic"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/124.png" alt="Jynx">
+                <span class="info">
+                    <p>#124 | Jynx</p>
+                    <div class="ice"></div>
+                    <div class="psychic"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/131.png" alt="Lapras">
+                <span class="info">
+                    <p>#131 | Lapras</p>
+                    <div class="water"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/131-Gmax.png" alt="Lapras [Gigantamax]">
+                <span class="info">
+                    <p>#131 | Lapras</p>
+                    <p class="form">Gigantamax</p>
+                    <div class="water"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen1">
+                <img class="notown" src="../Images/Pokémon/144.png" alt="Articuno">
+                <span class="info">
+                    <p>#144 | Articuno</p>
+                    <div class="ice"></div>
+                    <div class="flying"></div>
+                </span>
+            </div>
+            <!-- This is the end of Generation I. -->
+            <!-- This is the start of Generation II. -->
+            <div class="pkmn Gen2" id="Gen2">
+                <img class="notown" src="../Images/Pokémon/215.png" alt="Sneasel">
+                <span class="info">
+                    <p>#215 | Sneasel</p>
+                    <div class="dark"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <br>
+            <div class="pkmn Gen2">
+                <img class="notown" src="../Images/Pokémon/220.png" alt="Swinub">
+                <span class="info">
+                    <p>#220 | Swinub</p>
+                    <div class="ice"></div>
+                    <div class="ground"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen2">
+                <img class="notown" src="../Images/Pokémon/221.png" alt="Piloswine">
+                <span class="info">
+                    <p>#221 | Piloswine</p>
+                    <div class="ice"></div>
+                    <div class="ground"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen2">
+                <img class="notown" src="../Images/Pokémon/225.png" alt="Delibird">
+                <span class="info">
+                    <p>#225 | Delibird</p>
+                    <div class="ice"></div>
+                    <div class="flying"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen2">
+                <img class="notown" src="../Images/Pokémon/238.png" alt="Smoochum">
+                <span class="info">
+                    <p>#238 | Smoochum</p>
+                    <div class="ice"></div>
+                    <div class="psychic"></div>
+                </span>
+            </div>
+            <!-- This is the end of Generation II. -->
+            <!-- This is the start of Generation III. -->
+            <div class="pkmn Gen3" id="Gen3">
+                <img class="notown" src="../Images/Pokémon/351-Snowy.png" alt="Castform [Snowy]">
+                <span class="info">
+                    <p>#351 | Castform</p>
+                    <p class="form">Snowy</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen3">
+                <img class="notown" src="../Images/Pokémon/361.png" alt="Snorunt">
+                <span class="info">
+                    <p>#361 | Snorunt</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen3">
+                <img class="notown" src="../Images/Pokémon/362.png" alt="Glalie">
+                <span class="info">
+                    <p>#362 | Glalie</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen3">
+                <img class="notown" src="../Images/Pokémon/362-Mega.png" alt="Glalie [Mega]">
+                <span class="info">
+                    <p>#362 | Glalie</p>
+                    <p class="form">Mega</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen3">
+                <img class="notown" src="../Images/Pokémon/363.png" alt="Spheal">
+                <span class="info">
+                    <p>#363 | Spheal</p>
+                    <div class="ice"></div>
+                    <div class="water"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen3">
+                <img class="notown" src="../Images/Pokémon/364.png" alt="Sealeo">
+                <span class="info">
+                    <p>#364 | Sealeo</p>
+                    <div class="ice"></div>
+                    <div class="water"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen3">
+                <img class="notown" src="../Images/Pokémon/365.png" alt="Walrein">
+                <span class="info">
+                    <p>#365 | Walrein</p>
+                    <div class="ice"></div>
+                    <div class="water"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen3">
+                <img class="notown" src="../Images/Pokémon/378.png" alt="Regice">
+                <span class="info">
+                    <p>#378 | Regice</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="subtitle">Box 2</div>
+            <!-- This is the end of Generation III. -->
+            <!-- This is the start of Generation IV. -->
+            <div class="pkmn Gen4" id="Gen4">
+                <img class="notown" src="../Images/Pokémon/459.png" alt="Snover">
+                <span class="info">
+                    <p>#459 | Snover</p>
+                    <div class="grass"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen4">
+                <img class="notown" src="../Images/Pokémon/460.png" alt="Abomasnow">
+                <span class="info">
+                    <p>#460 | Abomasnow</p>
+                    <div class="grass"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen4">
+                <img class="notown" src="../Images/Pokémon/460-Mega.png" alt="Abomasnow [Mega]">
+                <span class="info">
+                    <p>#460 | Abomasnow</p>
+                    <p class="form">Mega</p>
+                    <div class="grass"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen4">
+                <img class="notown" src="../Images/Pokémon/461.png" alt="Weavile">
+                <span class="info">
+                    <p>#461 | Weavile</p>
+                    <div class="dark"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen4">
+                <img class="notown" src="../Images/Pokémon/471.png" alt="Glaceon">
+                <span class="info">
+                    <p>#471 | Glaceon</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen4">
+                <img class="notown" src="../Images/Pokémon/473.png" alt="Mamoswine">
+                <span class="info">
+                    <p>#473 | Mamoswine</p>
+                    <div class="ice"></div>
+                    <div class="ground"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen4">
+                <img class="notown" src="../Images/Pokémon/478.png" alt="Froslass">
+                <span class="info">
+                    <p>#478 | Froslass</p>
+                    <div class="ice"></div>
+                    <div class="ghost"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen4">
+                <img class="notown" src="../Images/Pokémon/479-Frost.png" alt="Rotom [Frost]">
+                <span class="info">
+                    <p>#479 | Rotom</p>
+                    <p class="form">Frost</p>
+                    <div class="electric"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen4">
+                <img class="notown" src="../Images/Pokémon/493.png" alt="Arceus [Ice]">
+                <span class="info">
+                    <p>#493 | Arceus</p>
+                    <p class="form">Ice</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <!-- This is the end of Generation IV. -->
+            <!-- This is the start of Generation V. -->
+            <div class="pkmn Gen5" id="Gen5">
+                <img class="notown" src="../Images/Pokémon/554-Galarian.png" alt="Darumaka [Galarian]">
+                <span class="info">
+                    <p>#554 | Darumaka</p>
+                    <p class="form">Galarian</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/555-Galarian.png" alt="Darmanitan [Galarian Standard Mode]">
+                <span class="info">
+                    <p>#555 | Darmanitan</p>
+                    <p class="form">Galarian<br>Standard Mode</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/555-Galarian-Zen.png" alt="Darmanitan [Galarian Zen Mode]">
+                <span class="info">
+                    <p>#555 | Darmanitan</p>
+                    <p class="form">Galarian<br>Zen Mode</p>
+                    <div class="ice"></div>
+                    <div class="fire"></div>
+                </span>
+            </div>
+            <br>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/582.png" alt="Vanillite">
+                <span class="info">
+                    <p>#582 | Vanillite</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/583.png" alt="Vanillish">
+                <span class="info">
+                    <p>#583 | Vanillish</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/584.png" alt="Vanilluxe">
+                <span class="info">
+                    <p>#584 | Vanilluxe</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/613.png" alt="Cubchoo">
+                <span class="info">
+                    <p>#613 | Cubchoo</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/614.png" alt="Beartic">
+                <span class="info">
+                    <p>#614 | Beartic</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/615.png" alt="Cryogonal">
+                <span class="info">
+                    <p>#615 | Cryogonal</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/646.png" alt="Kyurem">
+                <span class="info">
+                    <p>#646 | Kyurem</p>
+                    <div class="dragon"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/646-Black.png" alt="Kyurem [Black]">
+                <span class="info">
+                    <p>#646 | Kyurem</p>
+                    <p class="form">Black</p>
+                    <div class="dragon"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen5">
+                <img class="notown" src="../Images/Pokémon/646-White.png" alt="Kyurem [White]">
+                <span class="info">
+                    <p>#646 | Kyurem</p>
+                    <p class="form">White</p>
+                    <div class="dragon"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <!-- This is the end of Generation V. -->
+            <!-- This is the start of Generation VI. -->
+            <div class="pkmn Gen6" id="Gen6">
+                <img class="notown" src="../Images/Pokémon/698.png" alt="Amaura">
+                <span class="info">
+                    <p>#698 | Amaura</p>
+                    <div class="rock"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen6">
+                <img class="notown" src="../Images/Pokémon/699.png" alt="Aurorus">
+                <span class="info">
+                    <p>#699 | Aurorus</p>
+                    <div class="rock"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen6">
+                <img class="notown" src="../Images/Pokémon/712.png" alt="Bergmite">
+                <span class="info">
+                    <p>#712 | Bergmite</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="subtitle">Box 3</div>
+            <div class="pkmn Gen6">
+                <img class="notown" src="../Images/Pokémon/713.png" alt="Avalugg">
+                <span class="info">
+                    <p>#713 | Avalugg</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen6">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Avalugg [Hisuian]">
+                <span class="info">
+                    <p>#713 | Avalugg</p>
+                    <p class="form">Hisuian</p>
+                    <div class="ice"></div>
+                    <div class="rock"></div>
+                </span>
+            </div>
+            <!-- This is the end of Generation VI. -->
+            <!-- This is the start of Generation VII. -->
+            <div class="pkmn Gen7">
+                <img class="notown" src="../Images/Pokémon/740.png" alt="Crabominable">
+                <span class="info">
+                    <p>#740 | Crabominable</p>
+                    <div class="fighting"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen7">
+                <img class="notown" src="../Images/Pokémon/773-Ice.png" alt="Silvally [Ice]">
+                <span class="info">
+                    <p>#773 | Silvally</p>
+                    <p class="form">Ice</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <!-- This is the end of Generation VII. -->
+            <!-- This is the start of Generation VIII. -->
+            <div class="pkmn Gen8" id="Gen8">
+                <img class="notown" src="../Images/Pokémon/866.png" alt="Mr. Rime">
+                <span class="info">
+                    <p>#866 | Mr. Rime</p>
+                    <div class="ice"></div>
+                    <div class="psychic"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen8">
+                <img class="notown" src="../Images/Pokémon/872.png" alt="Snom">
+                <span class="info">
+                    <p>#872 | Snom</p>
+                    <div class="ice"></div>
+                    <div class="bug"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen8">
+                <img class="notown" src="../Images/Pokémon/873.png" alt="Frosmoth">
+                <span class="info">
+                    <p>#873 | Frosmoth</p>
+                    <div class="ice"></div>
+                    <div class="bug"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen8">
+                <img class="notown" src="../Images/Pokémon/875-Ice-Face.png" alt="Eiscue [Ice Face]">
+                <span class="info">
+                    <p>#875 | Eiscue</p>
+                    <p class="form">Ice Face</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen8">
+                <img class="notown" src="../Images/Pokémon/875-Noice-Face.png" alt="Eiscue [Noice Face]">
+                <span class="info">
+                    <p>#875 | Eiscue</p>
+                    <p class="form">Noice Face</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen8">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Arctozolt">
+                <span class="info">
+                    <p>#881 | Arctozolt</p>
+                    <div class="electric"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen8">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Arctovish">
+                <span class="info">
+                    <p>#883 | Arctovish</p>
+                    <div class="water"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen8">
+                <img class="notown" src="../Images/Pokémon/896.png" alt="Glastrier">
+                <span class="info">
+                    <p>#896 | Glastrier</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <br>
+            <div class="pkmn Gen8">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Calyrex [Ice Rider]">
+                <span class="info">
+                    <p>#898 | Calyrex</p>
+                    <p class="form">Ice Rider</p>
+                    <div class="psychic"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <!-- This is the end of Generation VIII. -->
+            <!-- This is the start of Generation IX. -->
+            <div class="pkmn Gen9">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Cetoddle">
+                <span class="info">
+                    <p>#974 | Cetoddle</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen9">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Cetitan">
+                <span class="info">
+                    <p>#975 | Cetitan</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen9">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Iron Bundle">
+                <span class="info">
+                    <p>#991 | Iron Bundle</p>
+                    <div class="ice"></div>
+                    <div class="water"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen9">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Frigibax">
+                <span class="info">
+                    <p>#996 | Frigibax</p>
+                    <div class="dragon"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen9">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Arctibax">
+                <span class="info">
+                    <p>#997 | Arctibax</p>
+                    <div class="dragon"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen9">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Baxcalibur">
+                <span class="info">
+                    <p>#998 | Baxcalibur</p>
+                    <div class="dragon"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Gen9">
+                <img class="notown" src="../Images/Pokémon/0.png" alt="Chien-Pao">
+                <span class="info">
+                    <p>#1002 | Chien-Pao</p>
+                    <div class="dark"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <!-- This is the end of Generation IX. -->
+            <!-- This is the start of the Novelty Pokémon. -->
+            <div class="pkmn Novelty" id="Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/52.png" alt="Alpine Meowth">
+                <span class="info">
+                    <p>Alpine Meowth</p>
+                    <div class="normal"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/53.png" alt="Alpine Persian">
+                <span class="info">
+                    <p>Alpine Persian</p>
+                    <div class="normal"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/95.png" alt="Crystal Onix">
+                <span class="info">
+                    <p>Crystal Onix</p>
+                    <div class="rock"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/116.png" alt="Icy Horsea">
+                <span class="info">
+                    <p>Icy Horsea</p>
+                    <div class="water"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="subtitle">Box 4</div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/117.png" alt="Icy Seadra">
+                <span class="info">
+                    <p>Icy Seadra</p>
+                    <div class="water"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/143.png" alt="Snowman Snorlax">
+                <span class="info">
+                    <p>Snowman Snorlax</p>
+                    <div class="normal"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/163.png" alt="Noothoot">
+                <span class="info">
+                    <p>Noothoot</p>
+                    <div class="flying"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/200.png" alt="Past Misdreavus">
+                <span class="info">
+                    <p>Past Misdreavus</p>
+                    <div class="ghost"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/203.png" alt="Snowy Girafarig">
+                <span class="info">
+                    <p>Snowy Girafarig</p>
+                    <div class="ice"></div>
+                    <div class="psychic"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/208.png" alt="Crystal Steelix">
+                <span class="info">
+                    <p>Crystal Steelix</p>
+                    <div class="steel"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/220.png" alt="Summer Swinub">
+                <span class="info">
+                    <p>Summer Swinub</p>
+                    <div class="ice"></div>
+                    <div class="ground"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/221.png" alt="Summer Piloswine">
+                <span class="info">
+                    <p>Summer Piloswine</p>
+                    <div class="ice"></div>
+                    <div class="ground"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/230.png" alt="Icy Kingdra">
+                <span class="info">
+                    <p>Icy Kingdra</p>
+                    <div class="ice"></div>
+                    <div class="dragon"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/296.png" alt="Festive Makuhita">
+                <span class="info">
+                    <p>Festive Makuhita</p>
+                    <div class="fighting"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Genders/Novelty/297-Male.png" alt="Santa Hariyama">
+                <span class="info">
+                    <p>Santa Hariyama</p>
+                    <div class="male"></div>
+                    <div class="fighting"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Genders/Novelty/297-Female.png" alt="Mrs. Hariyama">
+                <span class="info">
+                    <p>Mrs. Hariyama</p>
+                    <div class="female"></div>
+                    <div class="fighting"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <br>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/353.png" alt="Future Shuppet">
+                <span class="info">
+                    <p>Future Shuppet</p>
+                    <div class="ghost"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/354.png" alt="Future Banette">
+                <span class="info">
+                    <p>Future Banette</p>
+                    <div class="ghost"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/421-Frost.png" alt="Cherrim [Frost]">
+                <span class="info">
+                    <p>Cherrim</p>
+                    <p class="form">Frost</p>
+                    <div class="grass"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/425.png" alt="Present Drifloon">
+                <span class="info">
+                    <p>Present Drifloon</p>
+                    <div class="ghost"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/426.png" alt="Present Drifblim">
+                <span class="info">
+                    <p>Present Drifblim</p>
+                    <div class="ghost"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/429-Past.png" alt="Past Mismagius">
+                <span class="info">
+                    <p>Past Mismagius</p>
+                    <div class="ghost"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/446.png" alt="Snowman Munchlax">
+                <span class="info">
+                    <p>Snowman Munchlax</p>
+                    <div class="normal"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/473.png" alt="Summer Mamoswine">
+                <span class="info">
+                    <p>Summer Mamoswine</p>
+                    <div class="ice"></div>
+                    <div class="ground"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/548.png" alt="Mistilil">
+                <span class="info">
+                    <p>Mistilil</p>
+                    <div class="grass"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/549.png" alt="Settigant">
+                <span class="info">
+                    <p>Settigant</p>
+                    <div class="grass"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/582.png" alt="Vanillite [Snowless]">
+                <span class="info">
+                    <p>Vanillite</p>
+                    <p class="form">Snowless</p>
+                    <div class="ice"></div>
+                    <div class="water"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/584-Vanillishake.png" alt="Vanillishake">
+                <span class="info">
+                    <p>Vanillishake</p>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="subtitle">Box 5</div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/584-Melonait.png" alt="Melonait">
+                <span class="info">
+                    <p>Melonait</p>
+                    <div class="ice"></div>
+                    <div class="grass"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/650.png" alt="Snowman Chespin">
+                <span class="info">
+                    <p>Snowman Chespin</p>
+                    <div class="grass"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/653.png" alt="Snowman Fennekin">
+                <span class="info">
+                    <p>Snowman Fennekin</p>
+                    <div class="fire"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/656.png" alt="Snowman Froakie">
+                <span class="info">
+                    <p>Snowman Froakie</p>
+                    <div class="water"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/698.png" alt="Fossil Amaura">
+                <span class="info">
+                    <p>Fossil Amaura</p>
+                    <div class="rock"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/699.png" alt="Fossil Aurorus">
+                <span class="info">
+                    <p>Fossil Aurorus</p>
+                    <div class="rock"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <div class="pkmn Novelty">
+                <img class="notown" src="../Images/Pokémon/Novelty/C4-Winter.png" alt="Dracowymsy [Winter]">
+                <span class="info">
+                    <p>Dracowymsy</p>
+                    <p class="form">Winter</p>
+                    <div class="dragon"></div>
+                    <div class="ice"></div>
+                </span>
+            </div>
+            <!-- This is the end of the Novelty Pokémon. -->
+        </div>
+    </main><!-- this <main> must contain no images other than Pokémon to be marked by JS! -->
+    <footer>
+        <img class="left" src="../Images/Main/Sparkles.png">
+        <p>
+            Version: 4.1 | Last Updated: July 2024<br>
+            Source:
+            <a href="https://github.com/Level-X/GPX-Shiny-Tracker" target="_blank">GPX+ Shiny Tracker on GitHub</a> |
+            <a href="https://forums.gpx.plus/index.php?showtopic=78892" target="_blank">GPX+ Forum Thread</a><br>
+            Contributors:
+            <a href="https://cycloneblaze.net/" target="_blank">Cycloneblaze - JavaScript Programmer</a>. Visit him with
+            the button below!<br>
+            <a href="https://cycloneblaze.net/"><img src="../Images/Main/Cycloneblaze.png"></a><br>
+            <a href="https://gpx.plus/user/Level-X" target="_blank">Level-X - New banner and Original html</a>.
+        </p>
+        <img class="right" src="../Images/Main/Sparkles-Reversed.png">
+    </footer>
+</body>
+
+</html>
